@@ -29,20 +29,22 @@ def calcul(jour, totjours, fxFaillite, fxReussite, taux, valeur_depart, ancienne
 
 def main():
     """
-    Fonction principale
+    Fonction principale : permet de lancer la création du graphique
     """
 
     """Valeurs par défaut que j'ai utilisé dans le notebook Jupyter (archives)"""
-    annee_classique = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    annee_bissextile = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    #je n'ai pas trouvé d'utilité pour le moment (UP PLUS TARD)
+    #annee_classique = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    #annee_bissextile = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    #annees = [] #liste qui va stocker les différentes années
+    f_reussite = 1 #facteur chance réussite
+    f_faillite = 1 #facteur chance faillite
+    #(UP PLUS TARD)
 
     valeurs = [] #liste qui va stocker nos valeurs (points sur l'axe X à placer)
-    annees = [] #liste qui va stocker les différentes années
     historique = {} #dictionnaire jour-valeur
 
     valeur_depart = 100 #valeur par défaut
-    f_reussite = 1 #facteur chance réussite
-    f_faillite = 1 #facteur chance faillite
     taux = 0.05 #5% en moyenne
     probaNormale = 0.50 #50%
 
